@@ -1,7 +1,9 @@
 import Ember from 'ember';
 
 export default Ember.Controller.extend({
-  queryParams: ['from', 'to'],
-  from: null,
-  to: null
+  queryParams: ['fromDate', 'toDate', 'fromTime', 'toTime'],
+  fromDate: null,
+  toDate: null,
+  fromTime: null,
+  toTime: null
 });
