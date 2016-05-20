@@ -19,6 +19,11 @@ You will need the following things properly installed on your computer.
 * `npm install`
 * `bower install`
 
+### Running Tests
+
+* `ember test`
+* `ember test --server`
+
 ## Running / Development
 
 * `ember server`

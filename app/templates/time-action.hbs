@@ -7,10 +7,14 @@
 <h3>Time Interval: {{interval-printer (date-calculation fromDate toDate fromTime toTime)}}</h3>
 <h2>Options</h2>
 
-<p>{{error-options (date-calculation fromDate toDate fromTime toTime)}}</p>
-<p>{{days-options (date-calculation fromDate toDate fromTime toTime)}}</p>
-<p>{{weeks-options (date-calculation fromDate toDate fromTime toTime)}}</p>
-<p>{{months-options (date-calculation fromDate toDate fromTime toTime)}}</p>
-<p>{{years-option-one (date-calculation fromDate toDate fromTime toTime)}}</p>
-<p>{{years-option-two (date-calculation fromDate toDate fromTime toTime)}}</p>
+<h3>{{days-options (date-calculation fromDate toDate fromTime toTime)}}</h3>
+<h3>{{weeks-options (date-calculation fromDate toDate fromTime toTime)}}</h3>
+<h3>{{months-options (date-calculation fromDate toDate fromTime toTime)}}</h3>
+<h3>{{years-option-one (date-calculation fromDate toDate fromTime toTime)}}</h3>
+<h3>{{years-option-two (date-calculation fromDate toDate fromTime toTime)}}</h3>
+
+
+
+
+<p>No Errors? {{error-options (date-calculation fromDate toDate fromTime toTime)}}</p>
 {{outlet}}

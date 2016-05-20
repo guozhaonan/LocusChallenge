@@ -8,7 +8,7 @@ export function errorOptions(params) {
       return "It appears you've entered a negative time interval, please change your dates and times to ensure this does not happen.";
     }
     else {
-      return;
+      return true;
     }
   }
 }
