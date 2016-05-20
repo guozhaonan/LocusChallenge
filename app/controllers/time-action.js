@@ -5,5 +5,5 @@ export default Ember.Controller.extend({
   fromDate: null,
   toDate: null,
   fromTime: null,
-  toTime: null
+  toTime: null,
 });

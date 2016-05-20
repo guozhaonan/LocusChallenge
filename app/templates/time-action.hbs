@@ -5,31 +5,5 @@
 {{input type="text" value=toTime placeholder="24:00" maxlength="5"}}</h4>
 
 <h3>Time Interval: {{interval-printer (date-calculation fromDate toDate fromTime toTime)}}</h3>
-
-{{#if }}
-<!-- 604800000 is the number of seconds in 7 days -->
-  <h3>Option 1</h3>
-  <h3>Option 2</h3>
-  <h3>Option 3</h3>
-  <h3>Option 4</h3>
-  <h3>Option 5</h3>
-{{#else if }}
-<!-- 604800000 is the number of milliseconds in 7 days and 2678400000 is the number of milliseconds in 31 days -->
-  <h3>Option 2</h3>
-  <h3>Option 3</h3>
-  <h3>Option 4</h3>
-  <h3>Option 5</h3>
-{{#else if }}
-<!-- 2678400000 is the number of milliseconds in 31 days and 31622400000 is the number of milliseconds in 366 days -->
-  <h3>Option 3</h3>
-  <h3>Option 4</h3>
-  <h3>Option 5</h3>
-{{#else if }}
-<!-- 31622400000 is number of milliseconds in 366 days, largest Number in Javascript is 9007199254740991 -->
-  <h3>Option 4</h3>
-  <h3>Option 5</h3>
-{{#else}}
-<!--  The use case if the days is negative -->
-  <h3>Invalid, it appears you've entered a negative overall time</h3>
-{{/if}}
+{{timeDiff}}
 {{outlet}}
