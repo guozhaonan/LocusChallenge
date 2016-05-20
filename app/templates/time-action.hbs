@@ -2,19 +2,18 @@
 {{input type="text" value=fromTime placeholder="24:00" maxlength="5"}}</h4>
 
 <h4>To:{{input type="text" value=toDate placeholder="mm/dd/yyyy" maxlength="10"}}
-{{input type="text" value=toTime placeholder="24:00" maxlength="5"}}</h4>
+  {{input type="text" value=toTime placeholder="24:00" maxlength="5"}}</h4>
 
 <h3>Time Interval: {{interval-printer (date-calculation fromDate toDate fromTime toTime)}}</h3>
-<h2>Options</h2>
+<h1>Options Available:</h1>
 
-<h3>{{days-options (date-calculation fromDate toDate fromTime toTime)}}</h3>
-<h3>{{weeks-options (date-calculation fromDate toDate fromTime toTime)}}</h3>
-<h3>{{months-options (date-calculation fromDate toDate fromTime toTime)}}</h3>
-<h3>{{years-option-one (date-calculation fromDate toDate fromTime toTime)}}</h3>
-<h3>{{years-option-two (date-calculation fromDate toDate fromTime toTime)}}</h3>
+<h4>{{days-options (date-calculation fromDate toDate fromTime toTime)}}</h4>
+<h4>{{weeks-options (date-calculation fromDate toDate fromTime toTime)}}</h4>
+<h4>{{months-options (date-calculation fromDate toDate fromTime toTime)}}</h4>
+<h4>{{years-option-one (date-calculation fromDate toDate fromTime toTime)}}</h4>
+<h4>{{years-option-two (date-calculation fromDate toDate fromTime toTime)}}</h4>
 
 
 
 
 <p>No Errors? {{error-options (date-calculation fromDate toDate fromTime toTime)}}</p>
-{{outlet}}

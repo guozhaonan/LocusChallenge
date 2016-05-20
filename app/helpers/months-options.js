@@ -2,17 +2,17 @@ import Ember from 'ember';
 //This helper prints Option 3 if the conditions are met.
 //milliseconds in time interval is params[0]
 export function monthsOptions(params) {
-  if (params[0]){
+  if (params[0]) {
     var milliseconds = params[0];
     //2678400000 is the amount of milliseconds in 31 days
-    if (milliseconds < 31622400000 && milliseconds >= 2678400000){
+    if (milliseconds < 31622400000 && milliseconds >= 2678400000) {
       return "Option 3";
     }
     //604800000 is the amount of milliseconds in 7 days
-    else if (milliseconds < 2678400000 && milliseconds >= 604800000){
+    else if (milliseconds < 2678400000 && milliseconds >= 604800000) {
       return "Option 3";
     }
-    else if (milliseconds < 604800000 && milliseconds >= 0){
+    else if (milliseconds < 604800000 && milliseconds >= 0) {
       return "Option 3";
     }
     else {
