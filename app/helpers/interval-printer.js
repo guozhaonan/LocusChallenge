@@ -19,7 +19,7 @@ export function intervalPrinter(params) {
       var hours = iterator % 24;
       iterator /= 24;
       var days = iterator;
-      var printer = days + " days, " + hours + " hours, " + minutes + " minutes";
+      var printer = days + " days " + hours + " hours " + minutes + " minutes";
       return printer;
     }
   }
