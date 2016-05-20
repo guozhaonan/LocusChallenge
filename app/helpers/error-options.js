@@ -1,4 +1,5 @@
 import Ember from 'ember';
+//This is the error handling option, if the time returned is negative, then this will print a statement prompting the user to start over in inputting dates and times
 //milliseconds in time interval is params[0]
 export function errorOptions(params) {
   if (params[0]){

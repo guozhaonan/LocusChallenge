@@ -1,4 +1,5 @@
 import Ember from 'ember';
+//This helper prints Option 2 if the conditions are met
 //milliseconds in time interval is params[0]
 export function weeksOptions(params) {
   if (params[0]){
@@ -14,6 +15,9 @@ export function weeksOptions(params) {
     else {
       return;
     }
+  }
+  else {
+    return;
   }
 }
 

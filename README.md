@@ -1,13 +1,13 @@
 # Locus-Challenge
 
-This is a programming challenge for Locus Energy. Essentially it is a client side application that takes in 2 text fields and returns a time interval as well as a series of options that correspond with the time interval.
+This is a programming challenge for Locus Energy. Essentially it is a client side application that takes in four text fields and returns a time interval as well as a series of options that correspond with the time interval.
 
 ## Prerequisites
 
 You will need the following things properly installed on your computer.
 
 * [Git](http://git-scm.com/)
-* [Node.js(Currently running v5.11.1)](http://nodejs.org/) (with NPM running v3.8.6)
+* [Node.js (Currently running v5.11.1)](http://nodejs.org/) (with NPM running v3.8.6)
 * [Bower](http://bower.io/)
 * [Ember CLI (Currently running 2.3.0)](http://www.ember-cli.com/)
 * [PhantomJS](http://phantomjs.org/)
@@ -18,11 +18,6 @@ You will need the following things properly installed on your computer.
 * change into the new directory
 * `npm install`
 * `bower install`
-
-### Running Tests
-
-* `ember test`
-* `ember test --server`
 
 ## Running / Development
 

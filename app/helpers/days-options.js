@@ -1,4 +1,5 @@
 import Ember from 'ember';
+//This is the Option 1 Printer, if the conditions are met, then Option 1 will be displayed
 //milliseconds in time interval is params[0]
 export function daysOptions(params) {
   if (params[0]){
@@ -10,6 +11,9 @@ export function daysOptions(params) {
     else {
       return;
     }
+  }
+  else{
+    return;
   }
 }
 

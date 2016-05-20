@@ -1,4 +1,5 @@
 import Ember from 'ember';
+//This helper prints Option 4 if the conditions are met
 //params[0] is the time interval in milliseconds
 export function yearsOptionOne(params) {
   if (params[0]){
@@ -21,6 +22,9 @@ export function yearsOptionOne(params) {
     else {
       return;
     }
+  }
+  else {
+    return;
   }
 }
 

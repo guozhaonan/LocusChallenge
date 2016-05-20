@@ -1,4 +1,5 @@
 import Ember from 'ember';
+//This helper takes in the amount of milliseconds in a given interval and print the number of days, hours, and minutes given the amount of milliseconds
 //intervalPrinter takes one parameter, time_interval at params[0]
 export function intervalPrinter(params) {
   var time_interval = params[0];
@@ -22,6 +23,9 @@ export function intervalPrinter(params) {
       var printer = days + " days " + hours + " hours " + minutes + " minutes";
       return printer;
     }
+  }
+  else {
+    return;
   }
 }
 

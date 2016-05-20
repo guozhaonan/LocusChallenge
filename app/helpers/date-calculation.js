@@ -1,6 +1,6 @@
 import Ember from 'ember';
 import moment from 'moment';
-//Returns the milliseconds between two dates
+//This helper returns the milliseconds between two dates given two dates as inputs
 export function dateCalculation(params) {
   //Checking to see if all of the parameter values are entered
   if (params[0] && params[1] && params[2] && params[3]){
