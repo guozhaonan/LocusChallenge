@@ -10,7 +10,8 @@ export function dateCalculation(params) {
       var date_difference = Math.abs(to_date.getTime() - from_date.getTime());
     }
     else {
-      return "It appears the values you have entered are invalid, please make sure your date is in the following format(mm/dd/yyyy).";
+      //This is for nesting into other helper methods
+      return "date problem";
     }
     var from_time = moment.duration(params[2]).asMilliseconds();
     var to_time = moment.duration(params[3]).asMilliseconds();
@@ -20,12 +21,14 @@ export function dateCalculation(params) {
       var divisible_milliseconds = date_difference + time_difference;
     }
     else {
-      return "It appears you have put in invalid time values, please make sure you follow the 24-hour format (00:00 - 24:00)";
+      //This is for nesting into other helper methods
+      return "time problem";
     }
     return divisible_milliseconds;
   }
   else {
-    return "You need to add more information. Please fill in the other fields as prompted to receive options.";
+    //This is for nesting into other helper methods
+    return "information problem";
   }
 }
 
